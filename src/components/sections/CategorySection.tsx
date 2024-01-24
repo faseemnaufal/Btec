@@ -33,11 +33,11 @@ function CategorySection() {
       //title: "Customization",
       description:
         " We welcome you to visit BTEC Campus, to get further information about BTEC.",
-      highlighted: true,
+      highlighted: false,
     },
   ];
   return (
-    <section id="about">
+    <section id="about" className="bg-slate-300 rounded-lg">
       {/* <p className="text-lightGray text-[1.125rem] font-[600] text-center">
         About
       </p> */}

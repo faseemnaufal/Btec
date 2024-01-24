@@ -1,10 +1,13 @@
 import React from "react";
 import MainButton from "../common/MainButton";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 
 function HeroSection() {
   return (
-    <section className="flex justify-between items-center mt-16 md:z-[9999]">
+    <section className="flex justify-between items-center mt-16 md:z-[9999]"
+    style={{ backgroundImage: "url('/images/booksidee.jpg')" }}
+    >
       <div className="pt-32 md:pt-4">
         <p className="text-[1.128rem] font-[700] text-slate-900 uppercase mb-4">
         Empowering future generation through the Education.
@@ -30,13 +33,18 @@ function HeroSection() {
             />
             </Link>
           </div>
-          {/* <div className="flex items-center mt-6 hover:cursor-pointer">
-            <img
-              src="/images/play-shadow.png"
-              alt="rounded play icon with shadow"
+          <div>
+            <MainButton
+              text="026 2224335 / 0778973896"
+              classes=" bg-red-500 text-white font-[600] shadow-none rounded-[0.564rem] border-none hover:bg-secondary  w-[11.58788rem] h-[3rem]"
             />
-            <p className="text-lightGrayAlt -mt-6">Play Demo</p>
-          </div> */}
+          </div>
+          <div>
+            <MainButton
+              text="bteccampus@gmail.com"
+              classes=" bg-blue-500 text-white font-[600] shadow-none rounded-[0.564rem] border-none hover:bg-secondary  w-[11.58788rem] h-[3rem]"
+            />
+          </div>
         </div>
       </div>
       {/* <div className="hidden md:block">

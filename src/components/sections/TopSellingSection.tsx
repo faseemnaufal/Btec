@@ -29,7 +29,7 @@ function TopSellingSection() {
     },
   ];
   return (
-    <section id="academic">
+    <section id="academic" className="bg-slate-100 rounded-lg">
       {/* <p className="text-lightGray text-[1.125rem] font-[600] text-center">
         Top Selling
       </p> */}

@@ -3,8 +3,8 @@ import { AtSign, Landmark, Phone } from 'lucide-react'
 
 function FooterSection() {
   return (
-    <section id="contact">
-      <div className="flex flex-col md:flex-row  justify-between gap-8 ">
+    <section id="contact" className="bg-slate-50">
+      <div className="flex flex-col md:flex-row  justify-between gap-8 mt-2">
         <div>
           <p>
             <img src="/images/logoo.jpg" alt="footer logo" />
@@ -59,16 +59,16 @@ function FooterSection() {
         </div> */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4 items-center">
-            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+            <div className='flex items-center space-x-4  hover:bg-slate-400'>
               <AtSign className='text-black' />
               <p className=" text-lightGray text-[0.875rem] font-[600]">bteccampus@gmail.com</p>
               {/* <h2 className='font-sans text-xl'>bteccampus@gmail.com</h2> */}
             </div>
-            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+            <div className='flex items-center space-x-4  hover:bg-slate-400'>
               <Phone className='text-black' />
               <p className=" text-lightGray text-[0.875rem] font-[600]">026 2224335 / 0778973896</p>
             </div>
-            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+            <div className='flex items-center space-x-4 hover:bg-slate-400'>
               <Landmark className='text-black' />
               <p className=" text-lightGray text-[0.875rem] font-[600]">N0, 41, Sea View Road, Trincomalee</p>
             </div>
@@ -120,7 +120,7 @@ function FooterSection() {
           </div> */}
         </div>
       </div>
-      <p className="my-[5.25rem] text-lightGray text-[0.875rem] font-[600] flex justify-center">
+      <p className="my-[2.25rem] text-lightGray text-[0.875rem] font-[600] flex justify-center">
         All rights reserved@
       </p>
     </section>

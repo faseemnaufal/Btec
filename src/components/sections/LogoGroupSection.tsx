@@ -2,7 +2,7 @@ import React from "react";
 
 function LogoGroupSection() {
   return (
-    <div>
+    <div className="bg-slate-200 mb-8 rounded-lg">
       <p className="volkhov text-[3.125rem] text-title font-[700] text-center">
         Our Partners
       </p>

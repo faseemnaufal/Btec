@@ -12,7 +12,8 @@ import TopSellingSection from "@/components/sections/TopSellingSection";
 
 export default function Home() {
   return (
-    <main className="relative poppins  md:px-[9rem]">
+    <main className="relative poppins  md:px-[9rem] bg-slate-200"
+    >
       <NavBar />
       <div className="px-4 flex flex-col gap-[7.69rem]">
         <HeroSection />
