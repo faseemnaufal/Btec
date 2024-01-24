@@ -1,18 +1,19 @@
 import React from "react";
+import { AtSign, Landmark, Phone } from 'lucide-react'
 
 function FooterSection() {
   return (
-    <section>
-      <div className="flex flex-col md:flex-row justify-between gap-8 ">
+    <section id="contact">
+      <div className="flex flex-col md:flex-row  justify-between gap-8 ">
         <div>
           <p>
-            <img src="/images/logo-bottom.png" alt="footer logo" />
+            <img src="/images/logoo.jpg" alt="footer logo" />
           </p>
           <p className="text-lightGray mt-[1.19rem]">
-            Book your trip in minute, get full Control for much longer.
+           EMPOWER YOUR FUTURE THROUGH EDUCATION.
           </p>
         </div>
-        <div className="flex gap-8 flex-grow justify-between">
+        {/* <div className="flex gap-8 flex-grow justify-between">
           <div className="flex flex-col gap-4">
             <p className="text-lightBlack font-[700] text-[1.3125rem]">
               Company
@@ -55,14 +56,27 @@ function FooterSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4 items-center">
-            <img src="/images/facebook-icon.png" alt="social icon" />
-            <img src="/images/instagram-icon.png" alt="social icon" />
-            <img src="/images/x-icon.png" alt="social icon" />
+            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+              <AtSign className='text-black' />
+              <p className=" text-lightGray text-[0.875rem] font-[600]">bteccampus@gmail.com</p>
+              {/* <h2 className='font-sans text-xl'>bteccampus@gmail.com</h2> */}
+            </div>
+            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+              <Phone className='text-black' />
+              <p className=" text-lightGray text-[0.875rem] font-[600]">026 2224335 / 0778973896</p>
+            </div>
+            <div className='flex items-center space-x-2 border rounded-xl shadow-lg p-3 w-full my-2 hover:bg-slate-400'>
+              <Landmark className='text-black' />
+              <p className=" text-lightGray text-[0.875rem] font-[600]">N0, 41, Sea View Road, Trincomalee</p>
+            </div>
+            {/* <img src="/images/facebook-icon.png" alt="social icon" />
+            <img src="/images/instagram-icon.png" alt="social icon" /> */}
+            {/* <img src="/images/x-icon.png" alt="social icon" /> */}
           </div>
-          <p className="text-lightGray font-[500] text-[1.25rem]">
+          {/* <p className="text-lightGray font-[500] text-[1.25rem]">
             Discover our app
           </p>
           <div className="flex flex-col md:flex-row gap-8">
@@ -103,11 +117,11 @@ function FooterSection() {
               </div>
               <div></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <p className="my-[5.25rem] text-lightGray text-[0.875rem] font-[600] flex justify-center">
-        All rights reserved@jadoo.co
+        All rights reserved@
       </p>
     </section>
   );

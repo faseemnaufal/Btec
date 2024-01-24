@@ -9,7 +9,7 @@ function CategorySection() {
       //title: "Calculated Weather",
       description:
         "Our aim is to make each student an efficient and competent professional in his or her chosen career. Moreover, we help you become an asset to society and a worthy human being and professional standing and open the doors to a wide range of lucrative career options. We are proud of our success in being a demand oriented education and training provider, facilitating employment opportunities to all our students.",
-      highlighted: true,
+      highlighted: false,
     },
     {
       id: 1,
@@ -17,7 +17,7 @@ function CategorySection() {
       //title: "Best Flights",
       description:
         "We do also provide courses like Information Technology and English in order to make the students professionally competent to the world of IT & English. We believe that we can achieve the targets of setting up a potential frame of sound knowledge in IT & English for students to face the present world which is highly competitive in terms of IT related professions.",
-      highlighted: true,
+      highlighted: false,
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function CategorySection() {
       //title: "Local Events",
       description:
         "We do have courses in all level management and technical oriented courses as well. We are focusing on courses like Hospitality Management training programs which are on great demand among the students in today’s professional world. We cordially invite you as professionals to come up for the available course in BTEC so that you will be able enhance your knowledge to achieve your ambition in order to achieve professional promotion and other benefits of your personal career. ",
-      highlighted: true,
+      highlighted: false,
     },
     {
       id: 3,

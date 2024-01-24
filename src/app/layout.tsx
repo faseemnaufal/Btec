@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["400", "500", "600", "700
 const volkhov = Volkhov({ subsets: ['latin'], weight: ["400", "700"] })
 
 export const metadata: Metadata = {
-  title: 'Travel Agency Landing Page',
+  title: 'BTEC',
   description: 'A Travel Agency Landing Page built with Next14, Shadcn, and Tailwind.',
 }
 

@@ -2,6 +2,8 @@ import NavBar from "@/components/common/NavBar";
 import BookNextTripSection from "@/components/sections/BookNextTripSection";
 import CategorySection from "@/components/sections/CategorySection";
 import FooterSection from "@/components/sections/FooterSection";
+import Gallery from "@/components/sections/Gallery";
+import { SliderData } from "@/components/sections/SliderData";
 import HeroSection from "@/components/sections/HeroSection";
 import LogoGroupSection from "@/components/sections/LogoGroupSection";
 import NewsLetterSection from "@/components/sections/NewsLetterSection";
@@ -33,7 +35,7 @@ export default function Home() {
         <TopSellingSection />
         {/* <BookNextTripSection /> */}
         {/* <TestimonialSection /> */}
-        {/* <Gallery /> */}
+        <Gallery slides={SliderData} />
         <LogoGroupSection />
         <NewsLetterSection />
         <FooterSection />

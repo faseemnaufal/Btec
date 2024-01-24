@@ -1,5 +1,6 @@
 import React from "react";
 import MainButton from "../common/MainButton";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -22,10 +23,12 @@ function HeroSection() {
 
         <div className="flex gap-6 items-center ">
           <div>
+            <Link href="https://maps.app.goo.gl/RRVdtNGGKHdsGoij9">
             <MainButton
-              text="Find out more"
+              text="Trincomalee"
               classes="bg-secondary text-white font-[600] shadow-none rounded-[0.564rem] border-none hover:bg-secondary  w-[9.58788rem] h-[3rem]"
             />
+            </Link>
           </div>
           {/* <div className="flex items-center mt-6 hover:cursor-pointer">
             <img

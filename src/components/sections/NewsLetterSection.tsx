@@ -1,34 +1,43 @@
+"use client"
+
 import React from "react";
 import { Input } from "../ui/input";
 import MainButton from "../common/MainButton";
+import { ValidationError, useForm } from '@formspree/react';
 
 function NewsLetterSection() {
+
+  const [state, handleSubmit] = useForm("xvoeoqoa");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+}
+
   return (
     <div className="bg-[#DFD7F9] p-[4rem] rounded-[1.25rem] rounded-tl-extraLarge relative lg:-mt-[10rem]">
       <div className="z-20">
         <p className="text-lightGray text-[1.5rem] font-[600] text-center mb-[2.63rem]">
-          Subscribe to get information, latest news and other{" "}
-          <br className="hidden md:block" /> interesting offers about Jadoo
+          Send a quick message to get more information{" "}
+          <br className="hidden md:block" /> about BTEC
         </p>
-
-        <div className="flex justify-between flex-col md:flex-row items-center gap-8">
-          <div className="relative flex-grow z-[10]">
-            <Input
-              type="email"
-              placeholder="Your email"
-              className="bg-white h-[3.5rem] pl-[3rem]"
-            />
-            <div className="absolute top-5 left-4">
-              <img src="/images/envelop.png" alt="envelope icon" />
-            </div>
-          </div>
-
-          <MainButton
-            text="Subscribe"
-            classes="w-[9.25rem] h-[3.25rem] z-[10]"
-            isGradient
-          />
+        <form className='max-w-[600px] m-auto' onSubmit={handleSubmit}>
+        <div className='grid grid-cols-2 gap-2'>
         </div>
+        <input className='border shadow-lg p-3 w-full my-2' name='name' type="text" placeholder='Your mail address' />
+        <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+          />
+        <textarea className='border shadow-lg p-3 w-full' name="message" placeholder='Message'></textarea>
+        <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
+        <button className='border shadow-lg p-3 w-full mt-2 bg-blue-400 text-white' type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
       </div>
       <div className="absolute bottom-0  left-4 z-0 opacity-25">
         <img

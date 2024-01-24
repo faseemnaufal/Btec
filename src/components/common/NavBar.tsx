@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
+import { Phone, X } from "lucide-react";
 import Link from "next/link";
 import MainButton from "./MainButton";
 
@@ -14,7 +14,7 @@ function NavBar() {
   return (
     <div className="md:sticky md:top-0   md:shadow-none z-20 ">
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in  p-4 ">
+      <div className=" hidden lg:block animate-in fade-in zoom-in bg-slate-50 p-4 ">
         <div className="flex justify-between items-center">
           <div>
             <img src="/images/logoo.jpg" alt="logo" />
@@ -37,7 +37,10 @@ function NavBar() {
                 <Link href='/news'>News</Link>
               </li>
               <li className='p-4 hover:text-slate-400'>
-                <Link href='/contact'>Contact</Link>
+                <Link href='/#contact'>Contact</Link>
+              </li>
+              <li className='p-4 hover:text-slate-400 text-blue-500'>
+                <a href='tel:+0262224335'><Phone/></a>
               </li>
             </ul>
           </div>
@@ -90,7 +93,7 @@ function NavBar() {
                     <Link href='/news'>News</Link>
                   </li>
                   <li onClick={toggleMenu} className='p-4 text-4xl hover:text-gray-500'>
-                    <Link href='/contact'>Contact</Link>
+                    <Link href='/#contact'>Contact</Link>
                   </li>
                 </ul>
               </div>
