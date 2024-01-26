@@ -60,7 +60,7 @@ function FooterSection() {
           </div>
         </div> */}
         <div className="flex flex-col gap-4 items-center">
-          <div className="flex gap-4 items-center">
+          <div className="px-1 gap-4 items-center">
             <div className='flex items-center space-x-4 '>
               <AtSign className='text-white' />
               <p className='text-white'>bteccampus@gmail.com</p>

@@ -2,8 +2,8 @@ import React from "react";
 
 function LogoGroupSection() {
   return (
-    <div className="bg-slate-200 mb-8 rounded-lg">
-      <p className="volkhov text-[3.125rem] text-title font-[700] text-center">
+    <div className="bg-slate-900 md:mb-16 rounded-lg">
+      <p className="volkhov text-[3.125rem] text-white font-[700] text-center">
         Our Partners
       </p>
       <div className="w-full flex justify-center">

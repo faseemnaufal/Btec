@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 
 function HeroSection() {
   return (
-    <section className="flex justify-between items-center mt-16 md:z-[9999] rounded-lg"
+    <section className="flex justify-between items-center mt-2 md:z-[9999] rounded-lg"
     style={{ backgroundImage: "url('/images/booksidee.jpg')" }} 
     >
       <div className="pt-32 md:pt-4 md:flex-row items-center md:justify-between mt-16 w-full">
@@ -15,7 +15,7 @@ function HeroSection() {
         <div className="flex flex-col">
           
 
-          <p className="volkhov font-[700] text-[3rem] md:text-[4.43756rem] leading-large inline-flex bg-blue-800 text-white">
+          <p className="volkhov font-[700] text-[1.5rem] sm:text-[2rem] md:text-[4.43756rem] leading-large inline-flex bg-blue-800 text-white">
           BUSINESS & TECHNOLOGICAL EDUCATION COLLEGE
           </p>
         </div>
@@ -24,8 +24,8 @@ function HeroSection() {
         Our Mission : To create a future generation that can benefit the national welfare by building an individual human economy.
         </p>
 
-        <div className="flex gap-6 items-center">
-          <div>
+        <div className=" gap-6 items-center">
+          <div className="mb-1">
             <Link href="https://maps.app.goo.gl/RRVdtNGGKHdsGoij9">
             <MainButton
               text="Trincomalee"
