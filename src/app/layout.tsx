@@ -7,7 +7,11 @@ const volkhov = Volkhov({ subsets: ['latin'], weight: ["400", "700"] })
 
 export const metadata: Metadata = {
   title: 'BTEC',
-  description: 'A Travel Agency Landing Page built with Next14, Shadcn, and Tailwind.',
+  description: 'A College Website Page built with Next14, Shadcn, and Tailwind.',
+  icons:{
+    icon:['/favicon.ico?v=4'],
+    apple:['/apple-touch-icon.png?v=4']
+  }
 }
 
 export default function RootLayout({
