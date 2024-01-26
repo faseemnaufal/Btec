@@ -25,7 +25,7 @@ function HeroSection() {
           src="/images/t.jpg"
           alt="logo group"
           // style={{ width: '100%', height: 'auto',  transition: 'opacity 0.5s ease-in-out', }}
-          className="animated-image"
+          className="animated-image1"
         />
         <img
           src="/images/e.jpg"

@@ -15,6 +15,8 @@
 }
 
 
+
+
 .animated-image {
   width: 100%;
   height: auto;
@@ -26,7 +28,22 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(20px); /* Adjust the distance as needed */
+    transform: translateX(20px);
+  }
+}
+
+.animated-image1 {
+  width: 100%;
+  height: auto;
+  animation: slideAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
   }
 }
 
