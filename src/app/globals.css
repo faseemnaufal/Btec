@@ -13,3 +13,20 @@
 .red-gradient {
   background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
 }
+
+
+.animated-image {
+  width: 100%;
+  height: auto;
+  animation: slideAnimation 2s infinite alternate ease-in-out;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px); /* Adjust the distance as needed */
+  }
+}
+
