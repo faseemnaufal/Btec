@@ -3,7 +3,9 @@ import { AtSign, Landmark, Phone } from 'lucide-react'
 
 function FooterSection() {
   return (
-    <section id="contact" className="bg-slate-50">
+    <section id="contact" className="bg-slate-50" 
+    style={{ backgroundImage: "url('/images/bookrackk.jpg')" }} 
+    >
       <div className="flex flex-col md:flex-row  justify-between gap-8 mt-2">
         <div>
           <p>
@@ -59,18 +61,18 @@ function FooterSection() {
         </div> */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-4 items-center">
-            <div className='flex items-center space-x-4  hover:bg-slate-400'>
-              <AtSign className='text-black' />
-              <p className=" text-lightGray text-[0.875rem] font-[600]">bteccampus@gmail.com</p>
+            <div className='flex items-center space-x-4 '>
+              <AtSign className='text-white' />
+              <p className='text-white'>bteccampus@gmail.com</p>
               {/* <h2 className='font-sans text-xl'>bteccampus@gmail.com</h2> */}
             </div>
-            <div className='flex items-center space-x-4  hover:bg-slate-400'>
-              <Phone className='text-black' />
-              <p className=" text-lightGray text-[0.875rem] font-[600]">026 2224335 / 0778973896</p>
+            <div className='flex items-center space-x-4'>
+              <Phone className='text-white' />
+              <p className='text-white'>026 2224335 / 0778973896</p>
             </div>
-            <div className='flex items-center space-x-4 hover:bg-slate-400'>
-              <Landmark className='text-black' />
-              <p className=" text-lightGray text-[0.875rem] font-[600]">N0, 41, Sea View Road, Trincomalee</p>
+            <div className='flex items-center space-x-4'>
+              <Landmark className='text-white' />
+              <p className='text-white'>N0, 41, Sea View Road, Trincomalee</p>
             </div>
             {/* <img src="/images/facebook-icon.png" alt="social icon" />
             <img src="/images/instagram-icon.png" alt="social icon" /> */}
@@ -120,8 +122,8 @@ function FooterSection() {
           </div> */}
         </div>
       </div>
-      <p className="my-[2.25rem] text-lightGray text-[0.875rem] font-[600] flex justify-center">
-        All rights reserved@
+      <p className=" text-lightGray text-[0.875rem] font-[600] flex justify-center">
+        All rights reserved@btec
       </p>
     </section>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, X } from "lucide-react";
+import { Mail, Phone, X } from "lucide-react";
 import Link from "next/link";
 import MainButton from "./MainButton";
 
@@ -14,33 +14,40 @@ function NavBar() {
   return (
     <div className="md:sticky md:top-0   md:shadow-none z-20 ">
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in bg-slate-50 p-4 ">
+      <div className=" hidden lg:block animate-in fade-in zoom-in bg-slate-50 p-4 rounded-lg"
+      style={{ backgroundImage: "url('/images/bookrackk.jpg')" }}
+      >
         <div className="flex justify-between items-center">
           <div>
-            <img src="/images/logoo.jpg" alt="logo" />
+            <Link href='/'>
+              <img src="/images/logoo.jpg" alt="logo" />
+            </Link>
           </div>
           <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
             <ul className="flex items-center gap-2">
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
               <Link href='/'>Home</Link>
               </li>
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
                 <Link href='/#gallery'>Gallery</Link>
               </li>
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
                 <Link href='/#about'>About</Link>
               </li>
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
                 <Link href='/#academic'>Academic</Link>
               </li>
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
                 <Link href='/news'>News</Link>
               </li>
-              <li className='p-4 hover:text-slate-400'>
+              <li className='p-4 text-white hover:text-slate-400'>
                 <Link href='/#contact'>Contact</Link>
               </li>
               <li className='p-4 hover:text-slate-400 text-blue-500'>
                 <a href='tel:+0262224335'><Phone/></a>
+              </li>
+              <li className='p-4 hover:text-slate-400 text-blue-500'>
+                <a href='mailto:bteccampus@gmail.com'>bteccampus@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -49,12 +56,14 @@ function NavBar() {
       {/* MOBILE */}
       <div
         className={` block lg:hidden shadow-sm  fixed top-0 w-full z-[999]   py-4 animate-in fade-in zoom-in  ${
-          menu ? " bg-primary py-2" : "bg-white"
-        } `}
+          menu ? " bg-primary py-2" : "bg-slate-900" 
+        } `} 
       >
         <div className="flex justify-between mx-[10px]">
           <div className="flex gap-[50px] text-[16px] items-center select-none">
-            <img src="/images/logoo.jpg" alt="logo" className="w-[7rem]" />
+            <Link href='/'>
+              <img src="/images/logoo.jpg" alt="logo" className="w-[7rem]" />
+            </Link>
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (

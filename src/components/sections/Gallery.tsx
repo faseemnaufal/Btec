@@ -44,7 +44,7 @@ const Gallery: React.FC<SliderProps> = ({ slides }) => {
   }
 
   return (
-    <div id='gallery' className='max-w-[1240px] mx-auto'>
+    <div id='gallery' className='max-w-[1240px] mx-auto '>
       <p className="volkhov text-[3.125rem] text-title font-[700] text-center">
         Gallery
       </p>

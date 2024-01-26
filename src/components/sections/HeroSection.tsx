@@ -5,10 +5,10 @@ import { Phone } from "lucide-react";
 
 function HeroSection() {
   return (
-    <section className="flex justify-between items-center mt-16 md:z-[9999]"
-    style={{ backgroundImage: "url('/images/booksidee.jpg')" }}
+    <section className="flex justify-between items-center mt-16 md:z-[9999] rounded-lg"
+    style={{ backgroundImage: "url('/images/booksidee.jpg')" }} 
     >
-      <div className="pt-32 md:pt-4">
+      <div className="pt-32 md:pt-4 md:flex-row items-center md:justify-between mt-16 w-full">
         <p className="text-[1.128rem] font-[700] text-slate-900 uppercase mb-4">
         Empowering future generation through the Education.
         </p>
@@ -24,7 +24,7 @@ function HeroSection() {
         Our Mission : To create a future generation that can benefit the national welfare by building an individual human economy.
         </p>
 
-        <div className="flex gap-6 items-center ">
+        <div className="flex gap-6 items-center">
           <div>
             <Link href="https://maps.app.goo.gl/RRVdtNGGKHdsGoij9">
             <MainButton
@@ -39,12 +39,12 @@ function HeroSection() {
               classes=" bg-red-500 text-white font-[600] shadow-none rounded-[0.564rem] border-none hover:bg-secondary  w-[11.58788rem] h-[3rem]"
             />
           </div>
-          <div>
+          {/* <div>
             <MainButton
               text="bteccampus@gmail.com"
               classes=" bg-blue-500 text-white font-[600] shadow-none rounded-[0.564rem] border-none hover:bg-secondary  w-[11.58788rem] h-[3rem]"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="hidden md:block">
