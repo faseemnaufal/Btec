@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Phone, X } from "lucide-react";
+import { Phone, X } from "lucide-react";
 import Link from "next/link";
-import MainButton from "./MainButton";
 
 function NavBar() {
   const [menu, setMenu] = useState(false);

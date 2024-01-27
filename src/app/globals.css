@@ -20,7 +20,7 @@
 .animated-image {
   width: 100%;
   height: auto;
-  animation: slideAnimation 2s infinite alternate ease-in-out;
+  animation: slideAnimation 2s 2 alternate ease-in-out;
 }
 
 @keyframes slideAnimation {
@@ -28,14 +28,14 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
 }
 
 .animated-image1 {
   width: 100%;
   height: auto;
-  animation: slideAnimation 3s infinite alternate ease-in-out;
+  animation: slideAnimation 3s 2 alternate ease-in-out;
 }
 
 @keyframes slideAnimation {
@@ -43,7 +43,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
 }
 
